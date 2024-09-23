@@ -4,13 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles.css">
-    <title>Responsive Browser Redirect</title>
+    <title>Enhanced Search Browser</title>
 </head>
 <body>
     <div class="container">
         <img src="logo.png" alt="Logo" class="logo">
-        <input type="text" id="searchBar" placeholder="Search...">
-        <button onclick="redirect()">Go</button>
+        <input type="text" id="searchQuery" placeholder="Search..." class="search-bar" oninput="showSuggestions(this.value)">
+        <div id="suggestions" class="suggestions"></div>
+        <button onclick="redirectToSearch()" class="search-button">Search</button>
     </div>
     <script src="script.js"></script>
 </body>
