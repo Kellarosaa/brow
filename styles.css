@@ -15,7 +15,8 @@ body {
 
 .logo {
     width: 200px;
-    border-radius: 0%;
+    border-radius: 50%;
+    bottom: 70%;
 }
 
 .search-bar {
